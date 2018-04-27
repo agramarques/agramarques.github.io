@@ -1,0 +1,23 @@
+table {
+   width : 100%;
+}
+
+table, th, td {
+   border : 1px solid black;
+   text-align : left;
+   border-collapse : collapse;
+}
+
+#newMsgBtn {
+    border: none;
+    background-color: transparent;  
+    background-image: url('res/addIcon.png');
+    background-size: 30px 30px;
+    height: 30px;  
+    width: 30px;
+    float: right;
+}
+
+/*form {
+   display : none;
+}*/

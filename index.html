@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>MsgBoard ProjSW 2018.1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<h1 id = "boardName"></h1>
+<hr>
+
+<table>
+	<tr>
+		<td><input type="text" id="myInput0" onkeyup="filterTable(0)" placeholder="Filter by Title..."></td>
+		<td><input type="text" id="myInput1" onkeyup="filterTable(1)" placeholder="Filter by Message..."></td>
+		<td><input type="text" id="myInput2" onkeyup="filterTable(2)" placeholder="Filter by Posted..."></td>
+		<td><input type="text" id="myInput3" onkeyup="filterTable(3)" placeholder="Filter by Author..."></td>
+	</tr>
+</table>
+
+<table id = "posts">
+</table>
+
+
+<form id = "newMsg" onsubmit="return false">
+  Title:<br>
+  <input type="text" name="Title" size="20"><br>
+  Message:<br>
+  <input type="text" name="Message" size="20"><br>
+  <button id="postBtn" type = "button" onclick = "addMessage()"></button>
+</form>
+
+<br>
+<button id = "newMsgBtn" type = "button" onclick = "showForm()"></button>
+
+<script src = "client.js"></script>
+</body>
+
+</html>
